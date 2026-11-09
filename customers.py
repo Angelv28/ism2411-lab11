@@ -18,3 +18,16 @@ customer["tier"] = "platinum"
 print(customer)
 del customer["email"]
 print(customer)
+
+# Exercise 3
+email = customer.get("email", "no email on file")
+print(email)
+#print(customer[email]) 
+
+# Exercise 4
+for key, value in customer.items():
+    print(f"{key}: {value}")
+
+for key in customer:
+    print(f"{key}: {customer[key]}")
+
